@@ -2,8 +2,13 @@ import re
 from collections import Counter
 import numpy as np
 import nltk
-nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+
+
+nltk.download('punkt')
+
 
 
 # Read the file
@@ -76,3 +81,16 @@ print('vocabulary size :', len(vocabulary))
 
 for i in range(4):
     print(i,':  ',sequences[i])
+
+
+#pad sequences
+
+max_seq_lengh = 50
+padded_seq = pad_sequences(sequences, maxlen=max_seq_lengh, padding='post', value=vocabulary['<PAD>'])
+
+
+
+#to check if it works
+print('padded sequences :')
+for i in range(4):
+    print(i,':  ', padded_seq[i])
