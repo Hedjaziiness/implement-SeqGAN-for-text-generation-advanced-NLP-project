@@ -4,6 +4,8 @@ import numpy as np
 import nltk
 from nltk.tokenize import sent_tokenize
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from sklearn.model_selection import train_test_split
+
 
 
 
@@ -94,3 +96,11 @@ padded_seq = pad_sequences(sequences, maxlen=max_seq_lengh, padding='post', valu
 print('padded sequences :')
 for i in range(4):
     print(i,':  ', padded_seq[i])
+
+
+
+
+
+#data-splitting
+
+x_train, x_test = train_test_split(padded_seq, test_size=0.2, random_state=42)
