@@ -1,11 +1,13 @@
 import re
 from collections import Counter
 import numpy as np
-
+import nltk
+nltk.download('punkt')
+from nltk.tokenize import sent_tokenize
 
 
 # Read the file
-with open("pride_and_prejudice.txt", "r", encoding="utf-8") as file:
+with open("The Adventures of Sherlock Holmes.txt", "r", encoding="utf-8") as file:
     text = file.read()
 
 
@@ -16,9 +18,9 @@ def normalize_data(text):
     text = re.sub(r'\s+', ' ', text) #replace les espaces with only one space
     return text
 
-#apply function to our file 
+#apply the function to our file 
 cleaned_data = []
-with open("pride_and_prejudice.txt",'r', encoding='utf-8') as file:
+with open("The Adventures of Sherlock Holmes.txt",'r', encoding='utf-8') as file:
     text = file.read()
     textc = normalize_data(text)
     cleaned_data.append(textc)
@@ -26,15 +28,15 @@ with open("pride_and_prejudice.txt",'r', encoding='utf-8') as file:
 
 
     #write the result in another file
-with open('GAN_data.txt', 'w') as output_file:
+with open('clean_Sherlock_Holmes.txt', 'w') as output_file:
     for text in cleaned_data:
         output_file.write(text + '\n')
 
 
 
 
-#with open('GAN_data.txt', 'r') as file:
- #   print(text)
+with open('clean_Sherlock_Holmes.txt', 'r') as file:
+     print(text)
 
 
 #TOKEN TO INTEGER
@@ -49,18 +51,20 @@ vocabulary['<PAD>'] = 0
 vocabulary_size = len(vocabulary)
 
 
-#convert sentences to a sequence of ID
+#function thatconvert sentences to a sequence of ID
 
 def sentence_to_ids(sentence,vocabulary):
     return [vocabulary.get(word, vocabulary['<PAD>']) for word in sentence.split()]
 
 
-# Split by sentence (derna the end of sentence hwa '.' )
-sentences = text.split('. ')  
+# use function to Split by sentence (dertha using nltk )
+
+sentences = sent_tokenize(text) 
 sequences = [sentence_to_ids(sentence, vocabulary) for sentence in sentences]
 
 
-# Print some of the vocabulary
+
+# Print some of the vocabulary withr their IDs
 for word, index in list(vocabulary.items())[:10]:
     print(f'{word}: {index}')
 
@@ -68,11 +72,7 @@ for word, index in list(vocabulary.items())[:10]:
 print('vocabulary size :', len(vocabulary))
 
 
+# print some sequences of ids
 
 for i in range(4):
     print(i,':  ',sequences[i])
-
-
-
-
-print([word for word, index in vocabulary.items() if index == 4150])

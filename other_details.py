@@ -5,7 +5,7 @@ nltk.download('punkt')
 
 
 #read file
-with open('GAN_data.txt','r') as file:
+with open('clean_Sherlock_Holmes.txt','r') as file:
     text = file.read()
 
 
