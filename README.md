@@ -4,9 +4,9 @@
  
  it consists of two main components:
  
-***Generator***: its a neural network takes random noise(vector of random numbers) as input and tries to generate data that looks realistic enough.
+***1 Generator***: its a neural network takes random noise(vector of random numbers) as input and tries to generate data that looks realistic enough.
 
-**Discriminator**: its also a neural network , it takes both real data from the dataset and fake data from the generator as input and tries to do a binary classification, if it as real or fake.
+**2 Discriminator**: its also a neural network , it takes both real data from the dataset and fake data from the generator as input and tries to do a binary classification, if it as real or fake.
 
 These two networks are compeeting to win if we could say, at some point, the generator gets so good at creating realistic data that the discriminator wont descriminate .
 
@@ -31,7 +31,7 @@ GANs learn by making smooth and continious changes, but with text, it has to pic
 
  GANs aren’t designed to understand grammar or how sentences should flow so its struggle with text, becuz the order of words is important: sentences need to follow a structure to make sense.
 
-***THATS WHY***   Researchers suggest various architectures to handle text generation with GANs, including models that combine **RNNs** or **LSTMs** with adversarial training, enabling to improv coherence and structure in the faked text.
+***THATS WHY*** >>>   Researchers suggest various architectures to handle text generation with GANs, including models that combine **RNNs** or **LSTMs** with adversarial training, enabling to improv coherence and structure in the faked text.
 
 one such intersting architecture is **SeqGAN**
 
