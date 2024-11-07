@@ -43,3 +43,8 @@ SeqGAN (Sequence Generative Adversarial Network) is a model designed for generat
 ![seqgan](https://github.com/user-attachments/assets/fae254c3-281a-4f68-acb8-cd2ce7c20cf7)
 
 
+
+***I will be implementing here, a SeqGAN for text generation as part of my M2 advanced NLP project.***
+
+
+***step 01: preprocesing and data preparing***
