@@ -55,6 +55,6 @@ iam using a from Project Gutenberg ,
    - replace spaces with only one space .
    - i will keep stopwords and some punctuations because they are useful here.
    2. tokenization
-   3. create vocabulary and to give each word of the vocabulary a unique ID (token to ID this nu,bers dont have any semantic meaning) , why? , because the generator take numirical values as inputs its needed for the embeding layer.
-   4. convert sentences into sequence of integers based on vocabulary, (all sequences must have the same lenght)
+   3. create vocabulary and to give each word of the vocabulary a unique ID (token to ID this nu,bers dont have any semantic meaning) , why? , because the generator take numirical values as inputs (>>>its needed for the embeding layer.)
+   4. convert sentences into sequences of integers based on vocabulary, (all sequences must have the same lenght)
      
