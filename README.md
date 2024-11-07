@@ -21,6 +21,20 @@ applications of GAN :
 
 ***GANs Don’t Work Well for Text ?***
 
-GANs perform well with continuous data, like images, because the generator can create smooth, flowing values ( for example : pixel intensities), but when it comes to text and words; it cant perform good results beacus the input is **discrete valuse**
-so thats why reasearchers suggest some solutions
+GANs perform well with continuous data, like images, because the generator can create smooth, flowing values ( for example : pixel intensities), but when it comes to text and words; it cant perform good results beacus the input is **discrete valuse** , and this causes two main issues:
 
+**1.Hard to Learn with Words:**
+
+GANs learn by making smooth and continious changes, but with text, it has to pick exact and precise words, which prevents smooth transitions
+
+**2.Sentences Have Order and Meaning:**
+
+ GANs aren’t designed to understand grammar or how sentences should flow so its struggle with text, becuz the order of words is important: sentences need to follow a structure to make sense.
+
+***THATS WHY***   Researchers suggest various architectures to handle text generation with GANs, including models that combine **RNNs** or **LSTMs** with adversarial training, enabling to improv coherence and structure in the faked text.
+
+one such intersting architecture is **SeqGAN**
+
+***what's a SeqGAN  ?***
+
+SeqGAN (**Sequence GAN**) is a special type of GAN that was created to deal with the challenges of text, it adapts the GAN structure so it can generate text sequences, handling the unique structure and rules of language better than a standard GAN could.
