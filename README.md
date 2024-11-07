@@ -37,7 +37,8 @@ one such intersting architecture is **SeqGAN**
 
 ***what's a SeqGAN  ?***
 
-SeqGAN (**Sequence GAN**) is a special type of GAN that was created to deal with the challenges of text, it adapts the GAN structure so it can generate text sequences, handling the unique structure and rules of language better than a standard GAN could.
+SeqGAN (Sequence Generative Adversarial Network) is a model designed for generating high-quality sequences, such as text, by leveraging the adversarial training framework of GANs combined with sequence modeling techniques, it consists of a generator that creates sequences and a discriminator that classify it into **real** or **fake**. 
+The generator is trained using **reinforcement learning** and **policy gradients**, enabling it to generate sequences that are not only realistic but also *coherent* over long ranges. This approach helps SeqGAN overcome challenges faced by traditional GANs in generating structured sequences by capturing both short- and long-term dependencies in the data.
 
 ![seqgan](https://github.com/user-attachments/assets/fae254c3-281a-4f68-acb8-cd2ce7c20cf7)
 
