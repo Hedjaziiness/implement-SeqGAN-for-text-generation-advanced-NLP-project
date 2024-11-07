@@ -18,3 +18,7 @@ applications of GAN :
                       -Deep Fake
 
 
+***GANs Don’t Work Well for Text ?***
+GANs perform well with continuous data, like images, because the generator can create smooth, flowing values ( for example : pixel intensities), but when it comes to text and words; it cant perform good results beacus the input is **discrete valuse**
+so thats why reasearchers suggest some solutions
+
