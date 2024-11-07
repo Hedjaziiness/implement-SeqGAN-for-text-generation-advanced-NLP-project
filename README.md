@@ -49,7 +49,7 @@ SeqGAN (Sequence Generative Adversarial Network) is a model designed for generat
 
 ***step 01: preprocesing and data preparing :***
 
-iam using a from Project Gutenberg ,
+iam using data from Project Gutenberg :
    1. the preprocessing :
    - i put everything in lower case.
    - replace spaces with only one space .
