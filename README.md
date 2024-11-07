@@ -3,7 +3,7 @@
  
  it consists of two main components:
  
-***Generator***: its a neural network takes input and tries to generate data that looks realistic enough.
+***Generator***: its a neural network takes random noise(vector of random numbers) as input and tries to generate data that looks realistic enough.
 
 **Discriminator**: its also a neural network , it takes both real data from the dataset and fake data from the generator as input and tries to do a binary classification, if it as real or fake.
 
