@@ -9,7 +9,9 @@
 
 These two networks are compeeting to win if we could say, at some point, the generator gets so good at creating realistic data that the discriminator wont descriminate .
 
-applications of GAN : -Image to Image translation
+applications of GAN :
+       
+                      -Image to Image translation
 
                       -Image to Text / Text to Image translation
                       
