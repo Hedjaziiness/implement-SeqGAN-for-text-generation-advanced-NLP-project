@@ -47,4 +47,14 @@ SeqGAN (Sequence Generative Adversarial Network) is a model designed for generat
 ***I will be implementing here, a SeqGAN for text generation as part of my M2 advanced NLP project.***
 
 
-***step 01: preprocesing and data preparing***
+***step 01: preprocesing and data preparing :***
+
+iam using a from Project Gutenberg ,
+   1. the preprocessing :
+   - i put everything in lower case.
+   - replace spaces with only one space .
+   - i will keep stopwords and some punctuations because they are useful here.
+   2. tokenization
+   3. create vocabulary and to give each word of the vocabulary a unique ID (token to ID this nu,bers dont have any semantic meaning) , why? , because the generator take numirical values as inputs its needed for the embeding layer.
+   4. convert sentences into sequence of integers based on vocabulary, (all sequences must have the same lenght)
+     
