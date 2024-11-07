@@ -38,3 +38,7 @@ one such intersting architecture is **SeqGAN**
 ***what's a SeqGAN  ?***
 
 SeqGAN (**Sequence GAN**) is a special type of GAN that was created to deal with the challenges of text, it adapts the GAN structure so it can generate text sequences, handling the unique structure and rules of language better than a standard GAN could.
+
+![seqgan](https://github.com/user-attachments/assets/fae254c3-281a-4f68-acb8-cd2ce7c20cf7)
+
+
